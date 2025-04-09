@@ -75,7 +75,7 @@ export default function SearchPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
+        <div className="flex h-16 items-center">
           <div className="mr-4 flex items-center gap-2">
             <BookOpen className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold hidden sm:inline-block">BookVerse</span>
@@ -106,7 +106,7 @@ export default function SearchPage() {
         </div>
       </header>
 
-      <main className="container py-6">
+      <main className="py-6">
         <div className="flex flex-col md:flex-row gap-6">
           <AnimatePresence>
             {showFilters && (

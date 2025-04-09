@@ -2,10 +2,8 @@ import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
-    // Get current year
     const currentYear = new Date().getFullYear()
-
-    // Fetch books published this year, ordered by newest
+    
     const response = await fetch(
       `https://www.googleapis.com/books/v1/volumes?q=date:${currentYear}&orderBy=newest&maxResults=10`,
     )

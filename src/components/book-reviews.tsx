@@ -11,7 +11,6 @@ interface BookReviewsProps {
   bookId: string
 }
 
-// Mock reviews data
 const mockReviews = [
   {
     id: "1",
@@ -54,7 +53,7 @@ const mockReviews = [
   },
 ]
 
-export default function BookReviews({ bookId }: BookReviewsProps) {
+export default function BookReviews({  }: BookReviewsProps) {
   const [reviews, setReviews] = useState(mockReviews)
   const [showReviewForm, setShowReviewForm] = useState(false)
   const [newReview, setNewReview] = useState("")
