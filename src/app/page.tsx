@@ -272,7 +272,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <BookOpen className="h-5 w-5 text-primary" />
             <p className="text-sm text-muted-foreground">
-              ©️ {new Date().getFullYear()} BookVerse. All rights reserved.
+              ©️ {new Date().getFullYear()} ShelfNexus. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
