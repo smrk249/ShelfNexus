@@ -2,7 +2,6 @@ import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
-    // Featured books - using popular books that likely have good cover images
     const featuredQueries = [
       "intitle:dune",
       "intitle:harry+potter",

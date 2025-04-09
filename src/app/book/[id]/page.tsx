@@ -109,7 +109,6 @@ export default function BookDetailsPage() {
 
     const { volumeInfo, saleInfo } = book
 
-    // Extract and sanitize HTML description
     const createMarkup = () => {
         return { __html: volumeInfo.description || "No description available" }
     }
@@ -117,7 +116,7 @@ export default function BookDetailsPage() {
     return (
         <div className="min-h-screen bg-background">
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container flex h-16 items-center justify-between">
+            <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-2">
                 <Button variant="ghost" size="icon" onClick={() => router.back()}>
                 <ArrowLeft className="h-5 w-5" />
@@ -141,7 +140,7 @@ export default function BookDetailsPage() {
             </div>
         </header>
 
-        <main className="container py-8">
+        <main className="py-8">
             <div className="grid gap-8 md:grid-cols-[300px_1fr] lg:grid-cols-[350px_1fr] xl:gap-12">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

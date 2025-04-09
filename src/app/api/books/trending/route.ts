@@ -2,7 +2,6 @@ import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
-    // Fetch trending books - using popular subjects/authors for better results
     const queries = [
       "subject:fiction+orderBy=relevance",
       "subject:fantasy+orderBy=relevance",

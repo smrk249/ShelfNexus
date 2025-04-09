@@ -89,10 +89,10 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col ">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
+        <div className="flex h-16 items-center justify-between mr-12">
+          <div className="px-12 flex items-center gap-2">
             <BookOpen className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold">ShelfNexus</span>
           </div>
@@ -123,10 +123,10 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+                <div className="px-12 space-y-2">
                   <AnimatedText
                     text="Discover Your Next Favorite Book"
                     className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -135,7 +135,7 @@ export default function Home() {
                     Explore thousands of book reviews and recommendations from our community of readers and critics.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="px-12 flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/search">
                     <Button size="lg" className="px-8">
                       Explore Books
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -167,9 +167,9 @@ export default function Home() {
                     <span>Trending Now</span>
                   </div>
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">This Week's Top Picks</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Top Picks of the Week</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Discover the books everyone's talking about and add them to your reading list.
+                  Discover the books everyone is talking about and add them to your reading list.
                 </p>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Genres to Explore</h2>
@@ -245,7 +245,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">New Releases</h2>
@@ -268,7 +268,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex items-center gap-2">
             <BookOpen className="h-5 w-5 text-primary" />
             <p className="text-sm text-muted-foreground">
